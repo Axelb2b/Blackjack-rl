@@ -34,15 +34,7 @@ Une unité représente **une mise initiale**. Le payout peut être ±2 avec un d
 
 Les intervalles sont une approximation gaussienne sur des manches traitées comme indépendantes. En réalité, plusieurs manches successives partagent le même sabot : il faudra à terme utiliser des réplications par sabot ou par session. Les données sources sont disponibles dans `reports/`.
 
-## 3. Ce qui vaut la peine d'être expliqué à un recruteur
-
-1. **Modélisation du domaine :** construction de la logique du blackjack (As, blackjacks naturels, dealer, double, split, paiement, cut card et remélange), représentations des mains et des états.
-2. **Passage d'un problème métier à un problème RL :** choix des actions, contraintes de légalité, états, fonction de récompense et exploration ε-greedy.
-3. **Méthode d'évaluation :** comparaison de politiques, choix d'une même configuration de règles, exécution de simulations nombreuses et suivi de l'espérance de gain par manche.
-4. **Reproductibilité et qualité logicielle :** seeds, export portable du modèle en JSON, scripts de benchmark, rapports enregistrés, tests de régression.
-5. **Esprit critique :** le modèle n'est pas présenté comme « meilleur » sans preuve ; les différences entre apprentissage et utilisation du modèle sont documentées.
-
-## 4. Trois limites techniques intéressantes
+## 3. Trois limites techniques intéressantes
 
 ### Apprentissage limité à la première décision
 
