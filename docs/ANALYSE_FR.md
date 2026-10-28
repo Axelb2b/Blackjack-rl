@@ -67,20 +67,4 @@ Plusieurs paramètres existent dans `BlackjackRules` sans être encore appliqué
 
 Les désaccords sont utiles à analyser : états rarement visités, estimation bruitée, qualité de la représentation, ou différence entre la politique d'entraînement et celle de test. Les choix de la référence ne constituent pas une preuve d'optimalité.
 
-## 6. Formulation adaptée à un CV
 
-> Conception d'un simulateur de Blackjack en Python et développement d'agents d'apprentissage tabulaire (Q-learning, Monte Carlo) ; entraînement d'une politique sur 1 million d'épisodes et comparaison de quatre stratégies sur 400 000 manches par politique, avec tests, analyse des performances et reproductibilité.
-
-Ne pas écrire « agent battant la stratégie optimale » : ce n'est pas démontré par les mesures.
-
-## 7. Pour reproduire
-
-```bash
-python3 -m pip install -r requirements-dev.txt
-python3 -m pytest -q
-python3 -m scripts.benchmark --rounds 200000 --seed 42 --output reports/benchmark_200k_seed42.json
-python3 -m scripts.benchmark --rounds 200000 --seed 2026 --output reports/benchmark_200k_seed2026.json
-python3 -m scripts.summarize_benchmarks reports/benchmark_200k_seed42.json reports/benchmark_200k_seed2026.json
-```
-
-Les tests ajoutés donnent **10 réussites et 2 échecs attendus (`xfail`)**. Les scripts d'expérimentation anciens peuvent exiger des calculs beaucoup plus longs et ne sont pas tous soumis à cette suite de tests.
