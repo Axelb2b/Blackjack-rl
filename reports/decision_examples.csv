@@ -1,0 +1,14 @@
+hand,player_total,dealer_upcard,rule_based,mc_policy
+"10,6",16,10,hit,stand
+"10,2",12,4,stand,stand
+"6,5",11,6,double,double
+"7,2",9,6,double,double
+"A,7",18,3,double,hit
+"8,8",16,6,split,stand
+"A,A",12,6,split,split
+"9,9",18,7,stand,stand
+"10,10",20,6,stand,stand
+"6,6",12,5,split,stand
+"4,6",10,9,double,hit
+"10,7",17,10,stand,stand
+"A,6",17,6,double,double

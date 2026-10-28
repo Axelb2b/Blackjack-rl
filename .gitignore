@@ -1,0 +1,29 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+BJEngine/
+
+# macOS / IDE
+.DS_Store
+__MACOSX/
+*.swp
+.idea/
+.vscode/
+
+# Training outputs, large intermediate files and local logs
+*.log
+*.tmp
+*.bak
+*.ipynb_checkpoints/
+outputs/
+wandb/
+
+# Keep curated small model snapshots in Proj/models/rl
+# (Do not commit additional large training outputs without reviewing them.)
